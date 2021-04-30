@@ -9,9 +9,6 @@ public class playerMovement : MonoBehaviour
 
     public float speed = 12f;
     public float gravity = -9.81f;
-    public GameObject cannon;
-    public GameObject bullet;
-    public float force = 700f;
 
     Vector3 veloctiy;
 
@@ -29,13 +26,6 @@ public class playerMovement : MonoBehaviour
         veloctiy.y += gravity * Time.deltaTime;
 
         controller.Move(veloctiy * Time.deltaTime);
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
-            newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
-            newBullet.GetComponent<Rigidbody>().AddForce(-(newBullet.transform.forward * 1500));
-        }
 
 
 
