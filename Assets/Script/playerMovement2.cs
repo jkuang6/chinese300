@@ -13,6 +13,7 @@ public class playerMovement2 : MonoBehaviour
     public GameObject bullet;
     public float force = 700f;
     public float power;
+    public AudioSource shoot;
 
     Vector3 veloctiy;
 
@@ -36,6 +37,7 @@ public class playerMovement2 : MonoBehaviour
             GameObject newBullet = GameObject.Instantiate(bullet, cannon.transform.position, cannon.transform.rotation) as GameObject;
             newBullet.GetComponent<Rigidbody>().velocity += Vector3.up * 2;
             newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * power);
+            shoot.Play();
         }
 
 

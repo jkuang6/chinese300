@@ -14,13 +14,16 @@ public class walking : MonoBehaviour
 
     void Update()
     {
-        if (cc.velocity.magnitude > 2f && walkingSound.isPlaying == false)
+        Debug.Log("stopping");
+        if (cc.velocity.magnitude > 0f && walkingSound.isPlaying == false)
         {
             Debug.Log("walking");
             walkingSound.Play();
         }
-        else if(cc.velocity.magnitude < 2f && walkingSound.isPlaying == true)
+
+        else if(cc.velocity.magnitude <= 0f && walkingSound.isPlaying == true)
         {
+            Debug.Log("stopping");
             walkingSound.Stop();
         }
         
