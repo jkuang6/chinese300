@@ -6,24 +6,17 @@ public class addWater : MonoBehaviour
 {
 
     public Healthbar healthBar;
+    public GameObject waterOrb;
+    public AudioSource drink;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
+        drink.Play();
         if (collision.gameObject.tag == "Player")
         {
             healthBar.addWater();
+            Destroy(waterOrb);
+   
         }
     }
 }

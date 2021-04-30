@@ -572,7 +572,20 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: PROBUILDER_EXPERIMENTAL_FEATURES
+    4: PROBUILDER_EXPERIMENTAL_FEATURES
+    7: PROBUILDER_EXPERIMENTAL_FEATURES
+    13: PROBUILDER_EXPERIMENTAL_FEATURES
+    19: PROBUILDER_EXPERIMENTAL_FEATURES
+    21: PROBUILDER_EXPERIMENTAL_FEATURES
+    25: PROBUILDER_EXPERIMENTAL_FEATURES
+    27: PROBUILDER_EXPERIMENTAL_FEATURES
+    28: PROBUILDER_EXPERIMENTAL_FEATURES
+    29: PROBUILDER_EXPERIMENTAL_FEATURES
+    30: PROBUILDER_EXPERIMENTAL_FEATURES
+    31: PROBUILDER_EXPERIMENTAL_FEATURES
+    32: PROBUILDER_EXPERIMENTAL_FEATURES
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -647,7 +660,14 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Analytics: 1
+    Build: 0
+    Collab: 1
+    Game Performance: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -661,11 +681,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: bf05366b-8f7f-46cc-88e6-a56d7ce2dc94
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Chinese 300
+  organizationId: jkuang6
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   virtualTexturingSupportEnabled: 0
