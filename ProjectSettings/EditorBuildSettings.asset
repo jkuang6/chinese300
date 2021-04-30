@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Death Screen.unity
-    guid: 170d7b7c929b4e94eb8a0745857bc600
-  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -17,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: 237220bfea7d04442bc735bdc0bd1f0d
+  - enabled: 1
+    path: Assets/Scenes/Death Screen.unity
+    guid: 170d7b7c929b4e94eb8a0745857bc600
   m_configObjects: {}
